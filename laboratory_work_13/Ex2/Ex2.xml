@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ex2.xsl"?>
+<students>
+    <student>
+        <name>Джонни Депп</name>
+        <grade>10</grade>
+    </student>
+    <student>
+        <name>Леонардо Ди Каприо</name>
+        <grade>7</grade>
+    </student>
+    <student>
+        <name>Киану Ривз</name>
+        <grade>6</grade>
+    </student>
+    <student>
+        <name>Уилл Смит</name>
+        <grade>9</grade>
+    </student>
+    <student>
+        <name>Морган Фримен</name>
+        <grade>8</grade>
+    </student>
+    <student>
+        <name>Дон Дон-Дон</name>
+        <grade>2</grade>
+    </student>
+    <student>
+        <name>Иван Люмин</name>
+        <grade>3</grade>
+    </student>
+</students>

@@ -1,0 +1,64 @@
+@mixin margin-padding-0 {
+    margin: 0px;
+    padding: 0px;
+}
+$body: #dae8ff;
+$p: rgb(0, 0, 158);
+$span: #5c5c00;
+$h: purple;
+body {
+    background-color: $body;
+    height: 100%;
+    @include margin-padding-0;
+}
+p {
+    color: $p;
+    font-family: Arial;
+    font-size: 16pt;
+    span {
+        color: $span;
+    }
+}
+h1 {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: $h;
+	font-family: Monotype Corsiva;
+}
+.p1, .p2, .p3 {
+	font-family: 'Times New Roman';
+}
+.p1 {
+	color: red;
+	font-size: 18pt;
+}
+.p2 {
+	color: yellow;
+	font-size: 20pt;
+}
+.p3 {
+	color: green;
+	font-size: 22pt;
+}
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+    tr td, tr th {
+        border: 1px solid;
+    }
+}
+.p1 {
+    color: #8B0000;
+    font-family: 'Consolas';
+}
+.p2 {
+    color: #006400;
+    font-size: 1.3em;
+    font-family: 'Times New Roman';
+}
+.p3 {
+    color: #00008B;
+    font-size: 1.6em;
+    font-family: 'Comic Sans MS';
+}

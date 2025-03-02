@@ -1,0 +1,68 @@
+body {
+  background-color: #dae8ff;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  color: rgb(0, 0, 158);
+  font-family: Arial;
+  font-size: 16pt;
+}
+p span {
+  color: #5c5c00;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: purple;
+  font-family: Monotype Corsiva;
+}
+
+.p1, .p2, .p3 {
+  font-family: "Times New Roman";
+}
+
+.p1 {
+  color: red;
+  font-size: 18pt;
+}
+
+.p2 {
+  color: yellow;
+  font-size: 20pt;
+}
+
+.p3 {
+  color: green;
+  font-size: 22pt;
+}
+
+table {
+  border: 2px solid;
+  border-collapse: collapse;
+}
+table tr td, table tr th {
+  border: 1px solid;
+}
+
+.p1 {
+  color: #8B0000;
+  font-family: "Consolas";
+}
+
+.p2 {
+  color: #006400;
+  font-size: 1.3em;
+  font-family: "Times New Roman";
+}
+
+.p3 {
+  color: #00008B;
+  font-size: 1.6em;
+  font-family: "Comic Sans MS";
+}

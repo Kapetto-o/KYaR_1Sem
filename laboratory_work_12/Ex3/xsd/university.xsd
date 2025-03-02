@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+<xs:element name="university">
+<xs:complexType>
+<xs:sequence>
+    <xs:element name="head">
+    <xs:complexType>
+    <xs:sequence>
+        <xs:element name="univ" type="xs:string"/>
+        <xs:element name="BSTU" type="xs:string"/>
+    </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+    <xs:element name="main">
+    <xs:complexType>
+    <xs:sequence>
+        <xs:element name="facult" type="xs:string"/>
+        <xs:element name="facultiesName">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="FIT" type="xs:string"/>
+            <xs:element name="FF" type="xs:string"/>
+            <xs:element name="CTE" type="xs:string"/>
+            <xs:element name="PaM" type="xs:string"/>
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

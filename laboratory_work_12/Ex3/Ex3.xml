@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/Ex3.css"?>
+<university 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="xsd/university.xsd">
+    <head>
+        <univ>Университет:</univ>
+        <BSTU>БГТУ</BSTU>
+    </head>
+    <main>
+    <facult>Факультеты:</facult>
+    <facultiesName>
+        <FIT>ФИТ</FIT>
+        <FF>ЛХФ</FF>
+        <CTE>ХТиТ</CTE>
+        <PaM>ПиМ</PaM>
+    </facultiesName>
+    </main>
+</university>

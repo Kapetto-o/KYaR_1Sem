@@ -1,0 +1,97 @@
+
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+
+.nav1 {
+	margin-bottom: 130px;
+}
+.nav1>ul>li {
+        width: 200px;
+        position: relative;
+}
+.nav1 ul {
+	padding:0;
+}
+.second {
+	position: absolute;
+	display: none;
+    top: 100%;
+    left:0;
+}
+.second li {
+	width: 100px;
+}
+li:hover .second{
+	display: block;
+}
+.menu {
+	padding: 10px 0px 10px 10px;
+	text-align: left;
+	border: 1px solid black;
+	background: yellow;
+	width: 200px;
+}
+.menu .second li {
+	padding: 10px 0px 10px 10px;
+	text-align: left;
+	border: 2px dashed black;
+	margin-top: -2px;
+}
+.second li {
+	background: rgb(255, 144, 93);
+}
+
+
+
+
+.nav2-1 {
+	display: inline;
+}
+.nav2-1 a {
+	display: inline-block;
+}
+.nav2-1 li {
+	margin-right: -4px;
+}
+
+.nav2-1>ul>li {
+	position: relative;
+}
+.nav2-2 {
+	position:absolute;
+	display: none;
+	top: 100%;
+    left: -51px;
+}
+li:hover .nav2-2{
+	display: block;
+}
+
+.nav2-1 {
+	margin-left: -50px;
+}
+.nav2-1 li{
+	display: inline;
+	float: left;
+	border: 1px solid black;
+	margin: 0px 10px 0px 10px;
+	width: 125px;
+}
+.bstu, .fit, .pim, .xtit{
+	text-align: center;
+	padding: 4px 0px 4px 4px;
+	background: url(facultet.png) no-repeat 0 0;
+}
+.fit:hover{
+	background: url(facultet.png) no-repeat 0 -30px;
+}
+.pim:hover{
+	background: url(facultet.png) no-repeat 0 -90px;
+}
+.xtit:hover{
+	background: url(facultet.png) no-repeat 0 -60px;
+}

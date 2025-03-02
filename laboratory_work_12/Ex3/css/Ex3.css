@@ -1,0 +1,43 @@
+university {
+    display: table;
+    border-collapse: collapse;
+    margin: 10px;
+}
+head, main {
+    display: table-row;
+}
+univ, facult {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    background-color: silver;
+}
+BSTU, facultiesName {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+BSTU {
+    background-color: #abcdef;
+}
+facultiesName {
+    background-color: #ce9f71;
+}
+FIT, FF, PaM, CTE {
+    border: 1px solid black;
+    padding: 5px;
+}
+FIT {
+    background-color: #539dec;
+}
+FF {
+    background-color: #29b929;
+}
+PaM {
+    background-color: whitesmoke;
+}
+CTE {
+    background-color: #eba4eb;
+}

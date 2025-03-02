@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ex1.xsl"?>
+<universities>
+    <university>
+        <universityname>БГТУ</universityname>
+        <faculties>
+            <faculty>ФИТ</faculty>
+            <faculty>ЛХФ</faculty>
+            <faculty>ХТиТ</faculty>
+            <faculty>ПиМ</faculty>
+        </faculties>
+    </university>
+    <university>
+        <universityname>БНТУ</universityname>
+        <faculties>
+            <faculty>АТФ</faculty>
+            <faculty>ФГДИЭ</faculty>
+            <faculty>МСФ</faculty>
+            <faculty>МТФ</faculty>
+        </faculties>
+    </university>
+    <university>
+        <universityname>Институт пограничной службы Республики Беларусь</universityname>
+        <faculties>
+            <faculty>Сбор автомата на скорость, </faculty>
+            <faculty>Топографии,</faculty>
+            <faculty>Зимних пробежек</faculty>
+        </faculties>
+    </university>
+    <university>
+        <universityname>Академия управления при Президенте Республики Беларусь</universityname>
+        <faculties>
+            <faculty>Управления народом,</faculty>
+            <faculty>Завоевания доверия, </faculty>
+            <faculty>Красноречия</faculty>
+        </faculties>
+    </university>
+</universities>

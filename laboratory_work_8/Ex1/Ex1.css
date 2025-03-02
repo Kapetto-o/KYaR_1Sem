@@ -1,0 +1,41 @@
+h2 {
+    text-align: center;
+}
+aside {
+    height: 220px;
+    border: 2px solid blue;
+}
+aside.nav {
+    width: 180px;
+    float: right;
+}
+ul.nav {
+    list-style-type: none;
+    margin-left: -1.5em;
+}
+ul.nav a {
+    display: block;
+    font-size: 1.1em;
+}
+aside.inf {
+    width: 300px;
+    float: left;
+}
+ul.inf {
+    margin-left: -1.2em;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: red;
+}
+a:visited {
+    color: #8B0000;
+}
+a:hover {
+    color: green;
+}
+a:active {
+    color: rgb(184, 134, 11);
+}

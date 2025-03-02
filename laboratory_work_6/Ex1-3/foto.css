@@ -1,0 +1,20 @@
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+tr td, tr th {
+    border: 1px solid;
+}
+figure{
+	color: white;
+	font-size: 14pt;
+	background: darkblue;
+	border: 5px solid blue;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+}
+img {
+    width: 350px;
+    height: 350px;
+}

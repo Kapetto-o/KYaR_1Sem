@@ -1,0 +1,127 @@
+footer {
+  background-color: #626262;
+  color: white;
+}
+
+body {
+  background-color: #c0c0c0;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+div, form, header, .nav a {
+  border: 1px solid black;
+}
+
+h3 {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: grid;
+  grid-gap: 2%;
+  background-color: #7b7b7b;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 50px;
+  width: 100%;
+}
+header .navigation, header .logo {
+  margin: 5px 10px 5px 10px;
+}
+header .logo {
+  text-align: center;
+  padding-top: 10px;
+}
+header .navigation .nav {
+  display: block;
+  float: right;
+  margin: 5px 2% 5px 0px;
+}
+header .navigation .nav a {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  color: black;
+}
+header .navigation .nav li {
+  display: inline;
+  padding: 5px 5px 5px 5px;
+  list-style-type: none;
+}
+
+main {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: 3fr 1fr;
+  margin: 15px 15px 15px 15px;
+}
+main section {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-header-1, .main-header-2, .img-s {
+  grid-column: 1/4;
+}
+
+.text-m {
+  grid-row: 2/2;
+}
+
+.img-s {
+  white-space: nowrap;
+}
+.img-s div {
+  border: none;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-s div img {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0px 10px 10px;
+}
+
+aside {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 3fr;
+}
+aside .form {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+aside .form div {
+  margin: 5px 0px 5px 5px;
+}
+aside .form .img-a {
+  margin: 5px 0px 0px 5px;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+footer .footer {
+  margin: 5px 10px 5px 10px;
+  padding-left: 20px;
+}

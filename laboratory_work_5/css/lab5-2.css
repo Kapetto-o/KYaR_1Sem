@@ -1,0 +1,34 @@
+p {
+	margin: 0px;
+}
+td {
+	border: 1px solid black;
+	padding: 5px;
+}
+table {
+	empty-cells: hide;
+	border-spacing: 1px;
+}
+caption {
+	text-align: center;
+	font-size: 1.2em;
+}
+th {
+	background-color: darkblue;
+	width: 15px;
+	color: white;
+	border: 1px solid black;
+	text-align: center;
+}
+td:nth-child(2n) {
+	background: #00BFF0;
+	color: white;
+}
+td:nth-child(3n) {
+	background: purple;
+	color: white;
+}
+td:nth-child(4n) {
+	background: green;
+	color: white;
+}

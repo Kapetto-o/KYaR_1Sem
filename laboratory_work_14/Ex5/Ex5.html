@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-5</title>
+    <style>
+    polygon:hover {
+        stroke: red;
+    }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="triangle">
+                <stop offset="0" stop-color="yellow"/>
+                <stop offset="1" stop-color="green"/>
+            </linearGradient>
+        </defs>
+
+        <circle fill="blue" cx="50" cy="50" r="45"></circle>
+         <rect fill="red" x="100" height="100" width="100">
+            <animate attributeName="stroke-width" from="0" to="3" dur="2s" fill="freeze" repeatCount="indefinite" />
+            <animate attributeName="stroke" from="none" to="green" dur="2s" fill="freeze" repeatCount="indefinite" />
+         </rect>
+
+         <ellipse id="Ellipse" fill="green" rx="70" ry="35" cx="280" cy="50">
+            <animate attributeName="fill" begin="Ellipse.click" dur="0.5s" fill="freeze" to="blue" />
+         </ellipse>
+
+         <polygon fill="yellow" points="350 100, 400 0, 450 100" stroke="none" stroke-width="3">
+            <animate attributeName="opacity" from="1" to="0" dur="5s"/>
+        </polygon>
+        <polygon fill="url(#triangle)" points="350 100, 400 0, 450 100" stroke="none" stroke-width="3">
+            <animate attributeName="opacity" from="0" to="1" dur="5s"/>
+        </polygon>
+
+         <polyline points="10 110, 250 110, 160 160, 460 160" stroke="purple" fill="none"></polyline>
+
+    </svg>
+</body>
+</html>

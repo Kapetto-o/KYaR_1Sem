@@ -1,0 +1,214 @@
+/*Лабораторная 8*/
+.nav a{
+	display: inline-block;
+	border: 1px solid green;
+	padding: 10px 15px 10px 15px;
+	background: yellow;
+	text-decoration: none;
+	color: green;
+}
+.nav li{
+	display: inline;
+	float: left;
+	margin-right: -4px;
+}
+
+/*Лабораторная 7*/
+/*Задание 1*/
+#div1 {
+	margin-top: 100px;
+}
+.Ex-1-img {
+	width: 300px;
+	height: 300px;
+}
+#img_1:hover {
+	transform: scale(0.5);
+}
+#img_2:hover {
+	transform: rotate(45deg);
+}
+#img_3:hover {
+	transform: translate(50px);
+}
+#img_4:hover {
+	transform: skew(-20deg);
+}
+/*Задание 2*/
+.img_1, .img_2, .img_3, .img_4 {
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	float: left;
+}
+.img_1{
+	transform: perspective(1000px) rotateX(45deg);
+}
+.img_2{
+	transform: perspective(1000px) rotateY(45deg);
+}
+.img_3{
+	transform: perspective(1000px) rotateX(60deg);
+}
+.img_4{
+	transform: perspective(1000px) rotateY(-45deg);
+}
+/*Задание 3*/
+input {
+	width: 120px;
+	height: 40px;
+	margin: 30px;
+	background-color: aliceblue;
+	border: solid 2px black;
+}
+input[value="Мега Кнопка 1"]:hover {
+	background-color: black;
+	color: aliceblue;
+}
+input[value="Мега Кнопка 2"]:hover {
+	border: solid 5px orange;
+	outline: solid 5px yellow;
+}
+input[value="Мега Кнопка 3"]:hover {
+	border: none;
+	border-top: solid 5px green;
+	border-bottom: solid 5px green;
+}
+input[value="Мега Кнопка 3"]:hover {
+	border: none;
+	border-left: solid 5px blue;
+	border-right: solid 5px blue;
+}
+input[value="Мега Кнопка 4"]:hover {
+	border: none;
+	background: radial-gradient(yellow, Fuchsia 30px, DodgerBlue, transparent 90%);
+	background-color: aqua;
+}
+/*Задание 4*/
+#div-4 {
+	display:inline-block;
+	position: relative;
+	height: 270px;
+	width: 1000px;
+}
+#div-4 #a4-1, #a4-2, #a4-3, #a4-4 {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+}
+#a4-1 {
+	animation: ex4-1 3s linear infinite;
+}
+#a4-2 {
+	animation: ex4-2 3s linear infinite;
+	left: 30px;
+}
+#a4-3 {
+	animation: ex4-3 3s linear infinite;
+	left: 60px;
+}
+#a4-4 {
+	animation: ex4-4 3s linear infinite;
+	left: 90px;
+}
+@keyframes ex4-1 {
+	0% {transform: perspective(1000px) rotateY(45deg); left: 0px;}
+	50% {transform: none;}
+	100% {}
+}
+@keyframes ex4-2 {
+	0% {transform: perspective(1000px) rotateY(45deg); left: 30px;}
+	50% {left: 30px; transform: none; filter: none;}
+	100% {left: 200px; filter: blur(10px);}
+}
+@keyframes ex4-3 {
+	0% {transform: perspective(1000px) rotateY(45deg); left: 60px;}
+	50% {left: 60px; transform: none; filter: none;}
+	100% {left: 400px; filter: grayscale(1);}
+}
+@keyframes ex4-4 {
+	0% {transform: perspective(1000px) rotateY(45deg); left: 90px;}
+	50% {left:90px; transform: none; filter: none;}
+	100% {left: 600px; filter: invert(1);}
+}
+/*Задание 5*/
+#Ex5-1{
+	position: relative;
+	height: 300px;
+	width: 300px;
+	background-size: 300px 300px;
+	background-repeat: no-repeat;
+	border: 10px solid blue;
+	animation: Ex5 5s linear infinite;
+}
+@keyframes Ex5 {
+	0% {background-image: url(a\ \(1\).jpg);}
+	20% {background-image: url(a\ \(2\).jpg);}
+	40% {background-image: url(a\ \(3\).jpg);}
+	60% {background-image: url(a\ \(4\).jpg);}
+	80% {background-image: url(a\ \(8\).jpg);}
+	100% {background-image: url(a\ \(1\).jpg);}
+}
+/*Задание 6*/
+#img6-1, #img6-2, #img6-3, #img6-4, #img6-5 {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	display: block;
+	position: relative;
+}
+#img6-1{
+	animation: Ex6-1 3s linear infinite;
+}
+#img6-2{
+	animation: Ex6-2 3s linear infinite;
+}
+#img6-3{
+	animation: Ex6-3 3s linear infinite;
+}
+#img6-4{
+	animation: Ex6-4 3s linear infinite;
+	margin-bottom: 60px;
+}
+#img6-5{
+	animation: Ex6-5 4s linear infinite;
+	margin-bottom: 160px;
+}
+@keyframes Ex6-1{
+	from {left: 0px}
+	to {left: 200px}
+}
+@keyframes Ex6-2{
+	from{left: 0px;}
+	to{left: 200px; transform: skew(15deg);}
+}
+@keyframes Ex6-3{
+	from {left: -200px;}
+	to {left: 2200px;}
+}
+@keyframes Ex6-4{
+	from {transform: translate(0px, 0px);}
+	to {transform: translate(0px, 50px);}
+}
+@keyframes Ex6-5{
+	0% {left: 0px; top: 0px;}
+	25% {left: 150px; top: 0px;}
+	50% {left: 150px; top: 150px;}
+	75% {left: 0px; top: 150px;}
+	100% {left: 0px; top: 0px;}
+}
+/*Задание 7*/
+#div7 {
+	width: 300px;
+	height: 300px;
+	border: 2px solid black;
+	font-size: 1.2em;
+	overflow: hidden;
+	animation: Ex7 15s linear infinite;
+}
+@keyframes Ex7 {
+	from {color: red;}
+	33% {color: green;}
+	66% {color: blue;}
+	to {color: red;}
+}

@@ -1,0 +1,134 @@
+@import "variables/variables.scss";
+@mixin margin-padding-0 {
+    margin: 0px;
+    padding: 0px;
+}
+@mixin grid-gap-2 {
+    display: grid;
+    grid-gap: 2%;
+}
+@function size-t($h3-size, $ratio: 1.2) {
+    @return $h3-size/$ratio;
+}
+@function adjusted-font-size($size) {
+  @if $size > 16px {
+    @return $size * (1.2);
+  }
+  @else {
+    @return $size;
+  }
+}
+h3 {
+    font-size: adjusted-font-size(20px);
+    text-align: center;
+    @include margin-padding-0;
+}
+p {
+    font-size: size-t(20px);
+}
+body {
+    background-color: $main;
+    height: 100%;
+    @include margin-padding-0;
+}
+div, form, header, .nav a {
+    border: 1px solid black;
+}
+header {
+    @include grid-gap-2;
+    background-color: $header;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px;
+    width: 100%;
+    .navigation, .logo {
+        margin: 5px 10px 5px 10px;
+    }
+    .logo {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .navigation {
+        .nav {
+            display: block;
+            float: right;
+            margin: 5px 2% 5px 0px;
+            a {
+                display: inline-block;
+                padding: 5px 10px 5px 10px;
+                text-decoration: none;
+                color: black;
+            }
+            li {
+                display: inline;
+                padding: 5px 5px 5px 5px;
+                list-style-type: none;
+            }
+        }
+    }
+}
+main {
+    @include grid-gap-2;
+    grid-template-columns: 3fr 1fr;
+    margin: 15px 15px 15px 15px;
+    section {
+        @include grid-gap-2;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.main-header-1, .main-header-2, .img-s {
+    grid-column: 1/4;
+}
+.text-m {
+    p {
+        font-size: size-ht();
+    }
+    grid-row: 2/2;
+}
+.img-s {
+    white-space: nowrap;
+    div {
+        border: none;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 10px 0px 10px 10px;
+        }
+    }
+}
+aside {
+    @include grid-gap-2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 3fr;
+    .form {
+        @include grid-gap-2;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        div {
+            margin: 5px 0px 5px 5px;
+        }
+        .img-a {
+            margin: 5px 0px 0px 5px;
+            width: 50px; 
+            height: 50px;
+            object-fit: cover;
+        }
+    }
+}
+footer {
+    @include grid-gap-2;
+    @extend %footer;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .footer {
+        margin: 5px 10px 5px 10px;
+        padding-left: 20px;
+    }
+}

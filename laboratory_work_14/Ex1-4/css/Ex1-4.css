@@ -1,0 +1,23 @@
+text {
+    text-align: center;
+    font-size: 36px;
+}
+.first_cog {
+    fill: #264653;
+}
+
+.second_cog {
+    fill: #2a9d8f;
+}
+
+.third_cog {
+    fill: #e9c46a;
+}
+
+.fourth_cog {
+    fill: #f4a261;
+}
+
+.fifth_cog {
+    fill: #e76f51;
+}

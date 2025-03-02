@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/Ex1.css"?>
+<university>
+    <head>
+        <univ>Университет:</univ>
+        <BSTU>БГТУ</BSTU>
+    </head>
+    <main>
+    <facult>Факультеты:</facult>
+    <facultiesName>
+        <FIT>ФИТ</FIT>
+        <FF>ЛХФ</FF>
+        <CTE>ХТиТ</CTE>
+        <PaM>ПиМ</PaM>
+    </facultiesName>
+    </main>
+</university>

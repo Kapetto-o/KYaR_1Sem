@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Carveat';
+    src: url('../fonts/Carveat.eot');
+    src: url('../fonts/Carveat.eot') format('embedded-opentype'),
+    url('../fonts/Carveat.woff2') format('woff2'),
+    url('../fonts/Carveat.woff') format('woff'),
+    url('../fonts/Carveat.ttf') format('truetype'),
+    url('../fonts/Carveat.svg') format('svg');
+}
+
+@font-face {
+	font-family: 'Exo2';
+	src: url('../fonts/Exo2.eot');
+	src: url('../fonts/Exo2.eot') format('embedded-opentype'),
+	url('../fonts/Exo2.woff2') format('woff2'),
+	url('../fonts/Exo2.woff') format('woff'),
+	url('../fonts/Exo2.ttf') format('truetype'),
+	url('../fonts/Exo2.svg') format('svg');
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('../fonts/Comfortaa.eot');
+	src: url('../fonts/Comfortaa.eot') format('embedded-opentype'),
+	url('../fonts/Comfortaa.woff2') format('woff2'),
+	url('../fonts/Comfortaa.woff') format('woff'),
+	url('../fonts/Comfortaa.ttf') format('truetype'),
+	url('../fonts/Comfortaa.svg') format('svg');
+}
+
+h1 {
+	font-family: 'Carveat';
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 45px;
+}
+
+h2 {
+	font-family: 'Exo2';
+	margin-top: 0.2rem;
+	margin-bottom: 1.2em;
+	text-indent: 25px;
+	text-align: left;
+}
+
+p {
+	font-family: 'Comfortaa';
+	text-indent: 25px;
+	text-align: justify;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 200%;
+	font-size: 20px;
+}
+
+p::first-letter {
+	font-weight: bold;
+	font-size: 45px;
+	color: white;
+	background: hsla(275, 100%, 10%, 1);
+}
+
+ol li {
+	font-family: 'Comfortaa';
+	font-size: 20px;
+	list-style-type: none;
+	counter-increment: item;
+	color: black;
+}
+	ol li:before {
+		content: counter(item, upper-roman) ".";
+		color: blue;
+	}
+.h2ex4 {
+	margin-bottom: 0px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href=".css">
+    <title>15-2</title>
+</head>
+<body>
+    <h2>Форма заказа товара</h2>
+    <form id="orderForm">
+        <label for="productName">Название товара:</label><br>
+        <input type="text" id="productName" name="productName"><br>
+        <label for="quantity">Количество:</label><br>
+        <input type="number" id="quantity" name="quantity"><br>
+        <label for="customerName">Имя покупателя:</label><br>
+        <input type="text" id="customerName" name="customerName"><br>
+        <input type="button" value="Отправить" onclick="displayOrder()">
+    </form>
+
+    <footer id="footer"></footer>
+
+    <script>
+        function displayOrder() {
+            let productName = document.getElementById('productName').value;
+            let quantity = document.getElementById('quantity').value;
+            let customerName = document.getElementById('customerName').value;
+
+            let orderDetails = 'Товар: ' + productName + ', Количество: ' + quantity + ', Покупатель: ' + customerName;
+            document.getElementById('footer').innerText = orderDetails;
+        }
+    </script>
+</body>
+</html>

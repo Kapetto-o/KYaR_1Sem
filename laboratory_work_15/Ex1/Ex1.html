@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>15-1</title>
+    <style>
+        .image {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 5px solid transparent;
+        }
+        .image:hover {
+            cursor: pointer;
+        }
+        .image-border {
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="image" src="images/a (8).jpg" alt="На фото 1 изображена лодка, раскачиваемую акулами">
+        <img class="image" src="images/a (9).jpg" alt="На фото 2 изображена акула, танцующая перед лодкой">
+        <img class="image" src="images/a (10).jpg" alt="На фото 3 изображена акула, удивлённая лодке">
+        <img class="image" id="last-image" src="images/a (11).jpg" alt="На фото 4 изображена акула, которую безжаластно закручивает стая рыб">
+    </div>
+
+    <script>
+        document.querySelectorAll('.image').forEach((image) => {
+            image.addEventListener('mouseover', function() {
+                console.log(this.alt);
+            });
+            image.addEventListener('click', function() {
+                this.classList.add('image-border');
+            });
+        });
+
+        const lastImage = document.getElementById('last-image');
+        lastImage.addEventListener('mouseover', function() {
+            this.src = 'images/a (1).jpg';
+        });
+        lastImage.addEventListener('mouseout', function() {
+            this.src = 'images/a (11).jpg';
+        });
+    </script>
+</body>
+</html>

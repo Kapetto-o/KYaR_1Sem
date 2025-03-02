@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/Ex2.css"?>
+<!DOCTYPE university [
+<!ELEMENT university (head, main)>
+<!ELEMENT head (univ, BSTU)>
+<!ELEMENT main (facult, facultiesName)>
+<!ELEMENT facultiesName (FIT, FF, CTE, PaM)>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT main (#PCDATA)>
+<!ELEMENT univ (#PCDATA)>
+<!ELEMENT BSTU (#PCDATA)>
+<!ELEMENT facult (#PCDATA)>
+<!ELEMENT facultiesName (#PCDATA)>
+<!ELEMENT FIT (#PCDATA)>
+<!ELEMENT FF (#PCDATA)>
+<!ELEMENT CTE (#PCDATA)>
+<!ELEMENT PaM (#PCDATA)>
+<!ENTITY univerName "БГТУ">
+]>
+<university>
+    <head>
+        <univ>Университет:</univ>
+        <BSTU>&univerName;</BSTU>
+    </head>
+    <main>
+    <facult>Факультеты:</facult>
+    <facultiesName>
+        <FIT>ФИТ</FIT>
+        <FF>ЛХФ</FF>
+        <CTE>ХТиТ</CTE>
+        <PaM>ПиМ</PaM>
+    </facultiesName>
+    </main>
+</university>

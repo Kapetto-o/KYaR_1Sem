@@ -1,0 +1,10 @@
+table, th,td {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+th:first-child{
+    background: #b6ff00;
+}
+tr:first-child{
+    background: #4cff00;
+}
